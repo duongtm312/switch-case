@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="day"><input type="submit" onclick=" dayMonth()" value="Tính số ngày">
+<h3 id="alertDay">:</h3>
+</body>
+<script>
+  function dayMonth(){
+    let day = parseInt(document.getElementById("day").value)
+    let alertDay = ""
+    switch (day){
+      case 1:
+        alertDay = "Tháng 1 có 31 ngày"
+            break;
+      case 2:
+        alertDay = "Tháng 2 có 28,29 ngày"
+        break;
+      case 3:
+        alertDay = "Tháng 3 có 31 ngày"
+        break;
+      case 4:
+        alertDay = "Tháng 4 có 30 ngày"
+        break;
+      case 5:
+        alertDay = "Tháng 5 có 31 ngày"
+        break;
+      case 6:
+        alertDay = "Tháng 6 có 30 ngày"
+        break;
+      case 7:
+        alertDay = "Tháng 7 có 31 ngày"
+        break;
+      case 8:
+        alertDay = "Tháng 8 có 31 ngày"
+        break;
+      case 9:
+        alertDay = "Tháng 9 có 30 ngày"
+        break;
+      case 10:
+        alertDay = "Tháng 10 có 31 ngày"
+        break;
+      case 11:
+        alertDay = "Tháng 11 có 30 ngày"
+        break;
+      case 12:
+        alertDay = "Tháng 12 có 31 ngày"
+        break;
+        default:
+          "";
+
+    }
+    document.getElementById("alertDay").innerHTML = alertDay
+  }
+</script>
+</html>
